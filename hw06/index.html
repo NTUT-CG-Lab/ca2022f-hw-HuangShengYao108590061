@@ -211,10 +211,11 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      The following homework requires the character to follow my or the user's facial expression, which will be tracked by the face mesh. 
-      The model would mimic my facial expressions such as when I raised my brows, turned, tilted, or even nodded my head, closed and opened my eyes and mouth. I found it quite challenging 
-      at first since I needed to measure and determine which points from the face mesh picture that fits. But the result is still somewhat a bit inflexible, 
-      but then it eventually works, and the character now follows my facial expression, which I find quite intriguing. 
+      This homework is like the summary of the previous homeworks, in which we were required to perform a live stream as a VTuber and create and present our own story or topic in a ppt.
+      First, I had to install and setup OBS Studio and then capture the precise windows that would be used for the stream. After that, we'll need to create and setup our live stream Youtube
+      account to perform the live streaming, which will take a day, but I've already done it so I can use it immediately. Then after arranging the windows, setting up the audio input 
+      for the stream and linking the stream key, I can finally do the streaming as a VTuber.
+      (If the video below cannot be played, please use this <a href="https://www.youtube.com/watch?v=Rf5TG8CkJus">Youtube link</a>)
     </div>
   </div>
 
@@ -231,38 +232,28 @@
         <tr>
           <td rowspan="7" id="myTotal"></td>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
-          <td id='m1'>0</td>
-          <td>Face-Landmarks-Detection 與 Cubism 呈現於網頁上</td>
+          <td id='m1'>1</td>
+          <td>安裝OBS Studio</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>1</td>
-          <td>Cubism角色眉毛對接</td>
+          <td>修改Live2D人物大小</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
-          <td id='m3'>2</td>
-          <td>Cubism角色左右擺頭 </td>
+          <td id='m3'>1</td>
+          <td>設置 OBS 畫面 ( 有Live2D人物、攝影機影像、直播背景視窗及音訊擷取 )</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>2</td>
-          <td>Cubism角色上下點頭</td>
+          <td id='m4'>1</td>
+          <td>完成 OBS 與 Youtube 的串流設定</td>
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox5" checked ></td>
-          <td id='m5'>1</td>
-          <td>Cubism角色眼睛開闔</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox6" checked/></td>
-          <td id='m6'>2</td>
-          <td>Cubism角色歪頭</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox7" checked/></td>
-          <td id='m7'>2</td>
-          <td>Cubism角色嘴巴開闔</td>
+          <td id='m5'>6</td>
+          <td>以講述自身故事為主題進行 Youtube直播, 並以至少7頁的投影片為背景直播時長至少有1分鐘, 並保留直播存檔</td>
         </tr>
       </table>
     </div>
@@ -294,8 +285,6 @@
   d3.select("#myCheckbox3").on("change",update);
   d3.select("#myCheckbox4").on("change",update);
   d3.select("#myCheckbox5").on("change",update);
-  d3.select("#myCheckbox6").on("change",update);
-  d3.select("#myCheckbox7").on("change",update);
 
   update();
   
